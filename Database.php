@@ -1,0 +1,42 @@
+<?php 
+class Database  {
+
+    private $host = "localhost";
+    private $dbname = "blogdb";
+    private $username = "root";
+    private $password = "";
+    public $conn;
+
+    public function connect() {
+        try {
+            $this->conn = new PDO(
+                "mysql:host={$this->host};dbname={$this->dbname};charset=utf8",
+                $this->username,
+                $this->password
+            );
+        }catch(PDOException $e) {
+            echo "Erreur: " . $e->getMessage();
+        }
+       
+          return $this->conn;
+
+        }
+
+}
+//  $host = "localhost";
+//  $dbname ="blogdb";
+//  $username ="root";
+//  $password = "";
+//  $coon; 
+
+
+//     try {
+//        $conn = new PDO("mysql:host={$this->host};dbname={$this->dbname};charset=utf8",
+//        $username,
+//        $password
+        
+//     );
+//     } catch (PDOException $e) {
+//     echo "Erreur: " . $e->getmessage();
+//     }
+
