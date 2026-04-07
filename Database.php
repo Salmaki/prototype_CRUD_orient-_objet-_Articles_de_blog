@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 class Database  {
 
     private $host = "localhost";
@@ -23,20 +24,3 @@ class Database  {
         }
 
 }
-//  $host = "localhost";
-//  $dbname ="blogdb";
-//  $username ="root";
-//  $password = "";
-//  $coon; 
-
-
-//     try {
-//        $conn = new PDO("mysql:host={$this->host};dbname={$this->dbname};charset=utf8",
-//        $username,
-//        $password
-        
-//     );
-//     } catch (PDOException $e) {
-//     echo "Erreur: " . $e->getmessage();
-//     }
-
